@@ -84,7 +84,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://www.chiphell.com/uc_server/avatar.php?uid=387040&size=big&ts=1
+avatar: '/assets/avatar.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
