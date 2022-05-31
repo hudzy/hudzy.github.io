@@ -26,7 +26,7 @@ title: Hudz                          # the main title
 tagline: GitHub Pages Test Using jekyll+chirpy   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  Archive for my posts
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 #url: 'https://hudzy.github.io'
@@ -42,7 +42,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Hudz
-  email: example@doamin.com             # change to your email address
+  # email: example@doamin.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username      # change to your twitter homepage
