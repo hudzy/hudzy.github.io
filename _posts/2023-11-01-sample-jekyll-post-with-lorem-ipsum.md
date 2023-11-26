@@ -21,4 +21,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna auctor, fri
 ### Subsection Heading
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna auctor, fringilla elit ac, lacinia est. Curabitur ullamcorper facilisis metus, id viverra purus luctus a.
-

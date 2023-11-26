@@ -1,5 +1,5 @@
 ---
-layout: page
+# layout: page
 permalink: /about/
 title: About
 icon: fas fa-info-circle
@@ -7,8 +7,6 @@ order: 3
 ---
 
 # Albert Einstein
-
-![Einstein](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer.jpg/800px-Einstein_1921_by_F_Schmutzer.jpg)
 
 Albert Einstein was a theoretical physicist known for developing the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). He received the Nobel Prize in Physics in 1921 for his explanation of the photoelectric effect.
 
@@ -44,4 +42,3 @@ Albert Einstein's work has had a profound impact on our understanding of the uni
 ---
 
 _This page is a tribute to the life and work of Albert Einstein._
-
