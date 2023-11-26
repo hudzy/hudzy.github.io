@@ -1,27 +1,47 @@
 ---
+layout: page
+permalink: /about/
 title: About
-# permalink: /about/
-author_profile: true
 icon: fas fa-info-circle
-order: 4
+order: 3
 ---
 
-## Welcome to the About Page
+# Albert Einstein
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna auctor, fringilla elit ac, lacinia est. Curabitur ullamcorper facilisis metus, id viverra purus luctus a. Fusce cursus lectus vel sapien ultricies, eu fermentum justo ultrices. Nunc in magna at lacus varius sollicitudin ut eget ligula.
+![Einstein](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer.jpg/800px-Einstein_1921_by_F_Schmutzer.jpg)
 
-### Our Mission
+Albert Einstein was a theoretical physicist known for developing the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). He received the Nobel Prize in Physics in 1921 for his explanation of the photoelectric effect.
 
-Our mission is to provide valuable information and resources to our readers. We strive to create content that is informative, engaging, and accessible to a wide audience.
+## Life and Achievements
 
-### Meet the Team
+- **Born:** March 14, 1879
+- **Died:** April 18, 1955
 
-#### John Doe
+### Major Contributions:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna auctor, fringilla elit ac, lacinia est. Curabitur ullamcorper facilisis metus, id viverra purus luctus a.
+1. **Theory of Relativity:**
 
-#### Jane Smith
+   - Special Relativity (1905): Introduced the famous equation \(E=mc^2\).
+   - General Relativity (1915): Provided a new understanding of gravity.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna auctor, fringilla elit ac, lacinia est. Curabitur ullamcorper facilisis metus, id viverra purus luctus a.
+2. **Photoelectric Effect:**
 
-Thank you for visiting our About page!
+   - Explained how light interacts with matter on the atomic scale.
+
+3. **Quantum Mechanics:**
+   - Made significant contributions to the early development of quantum theory.
+
+## Quotes
+
+> "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution."
+
+> "The only source of knowledge is experience."
+
+## Legacy
+
+Albert Einstein's work has had a profound impact on our understanding of the universe. His contributions to science, philosophy, and humanity continue to inspire generations of thinkers and researchers.
+
+---
+
+_This page is a tribute to the life and work of Albert Einstein._
+
