@@ -218,6 +218,6 @@ Postgres 采用在每个连接上生成一个新进程的方式工作。而 MySQ
 
 ___
 
-同时，在一个组织内部共存 Postgres 和 MySQL 也是很常见的情况。如果需要同时管理 Postgres 和 MySQL 的开发生命周期，欢迎来了解一下 [Bytebase](http://mp.weixin.qq.com/s?__biz=MzkzMjI2MDY5OQ==&mid=2247505156&idx=1&sn=a8eed11c0174c26cf9099827380edf10&chksm=c25ceb30f52b6226e1c2c0da6d7bfe9540c3da97c5a0b6e227c5e7a89ff0e7071ef1caa99f3f&scene=21#wechat_redirect)！
+同时，在一个组织内部共存 Postgres 和 MySQL 也是很常见的情况。如果需要同时管理 Postgres 和 MySQL 的开发生命周期，欢迎来了解一下 [Bytebase](https://mp.weixin.qq.com/s?__biz=MzkzMjI2MDY5OQ==&mid=2247505156&idx=1&sn=a8eed11c0174c26cf9099827380edf10&chksm=c25ceb30f52b6226e1c2c0da6d7bfe9540c3da97c5a0b6e227c5e7a89ff0e7071ef1caa99f3f&scene=21#wechat_redirect)！
 
 ![图片](https://mmbiz.qpic.cn/sz_mmbiz_png/MYlicw4Vl5Sg6XnnPmUpVia59ABlXwpibBB6jp4PtC8ricBia0biabxd5PicGmTPsukFcMhOe3Tc66YuCdIEvT4TibOHYw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
