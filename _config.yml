@@ -28,8 +28,8 @@ url: "https://hudzy.github.io"
 github:
   username: hudzy # change to your github username
 
-twitter:
-  username: hudzy # change to your twitter username
+# twitter:
+#   username: hudzy # change to your twitter username
 
 social:
   # Change to your full name.
