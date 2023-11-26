@@ -1,7 +1,6 @@
 ---
 title: About
 # permalink: /about/
-layout: single
 author_profile: true
 icon: fas fa-info-circle
 order: 4
