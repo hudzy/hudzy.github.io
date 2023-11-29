@@ -5,8 +5,6 @@ date: 2023-08-16
 tags: [笔记, 工作]
 ---
 
-# Run a command with the argument from the last command
-
 There are a few shortcuts if you want all of the arguments from the previous command, or just the last argument.
 
 -   For all of the arguments: `<command> !*`

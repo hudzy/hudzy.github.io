@@ -5,8 +5,6 @@ date: 2023-08-25
 tags: [笔记, 工作]
 ---
 
-# Docker container name
-
 When creating a Docker container, if its name is not specified, docker will randomly generate a name: two words with a underscore, you take it as it is, **but how**?
 
 There is a [namesgenerator](https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go) package on [moby](https://github.com/moby/moby/)(A.K.A. Docker) project, it uses a list of adjectives for left word and a list of notable scientists and hackers for right word. If the generated combination is used, the new container name will be added with a random number from 0 to 10.
