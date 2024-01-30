@@ -17,5 +17,5 @@ tags: [笔记, 工作]
 |…|Ellipsis|
 |`|Backtick|
 |&|Ampersand|
-|\\\|Backslash|
+|\ |Backslash|
 |§|Section Sign|
