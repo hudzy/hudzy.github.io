@@ -7,7 +7,10 @@ tags: [笔记, 工作]
 
 |Sign|Name|
 |:---:|:---:|
+|()|Parenthesis|
 |⟨⟩|Angle brackets|
+|[]|Square Bracket|
+|{}|Curly Brace|
 |*|Asterisk|
 |^|Caret|
 |«»|Guillemet|
