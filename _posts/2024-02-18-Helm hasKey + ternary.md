@@ -5,7 +5,7 @@ date: 2024-02-18
 tags: [笔记, 工作]
 ---
 
-```yaml
+```
 feature_enabled_in_k8s_resource: {{ hasKey .Values "foo_feature_enabled" | ternary .Values.foo_feature_enabled true }}
 ```
 
@@ -50,3 +50,4 @@ false | ternary "foo" "bar"
 ```
 
 The above returns `"bar"`.
+
