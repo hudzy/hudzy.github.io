@@ -71,7 +71,7 @@ Have you ever faced the frustration of your computer going idle during important
 
 ---
 
-### Chinese Version
+## Chinese Version
 
 ---
 
@@ -136,6 +136,8 @@ Have you ever faced the frustration of your computer going idle during important
    - **键盘按键:** 选择是否在移动期间按下“Ctrl”键（默认是）。
 
 ---
+
+## The Code
 
 Here is the full script:
 
