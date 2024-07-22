@@ -1,139 +1,183 @@
 ---
 layout: post
-title: "Cursor Movement Script"
+title: "Mouse Movement Script"
 date: 2024-07-21
 tags: [折腾]
 ---
 
-# Blog Post: Automating Cursor Movement to Prevent System Idle
+# Mouse Movement Automation and Tracking Script
 
-## English Version
+## Introduction
+
+This script is designed to automate mouse movements and track user mouse activity. It offers two modes of cursor movement: random and one-pixel. Additionally, it logs the time of the last mouse movement to avoid redundant automated movements and provides the flexibility to control whether the Ctrl key is pressed during automated movements.
+
+## Features
+
+- **Cursor Movement Modes**:
+
+  - **Random Movement**: Moves the cursor to random locations on the screen smoothly over a specified duration.
+  - **One-Pixel Movement**: Moves the cursor by one pixel in a random direction (left, right, up, or down).
+
+- **Mouse Movement Tracking**:
+
+  - Tracks and logs the time of the last mouse movement to avoid triggering automated movements if the cursor has been moved recently.
+
+- **Logging**:
+
+  - Provides detailed logs of cursor movements and actions, including timestamps and coordinates.
+
+- **Customizable Parameters**:
+  - **Movement Mode**: Choose between random or one-pixel movement.
+  - **Movement Interval**: Set the interval in seconds between automated movements.
+  - **Movement Duration**: Define the duration over which the cursor moves smoothly (only applicable for random mode).
+  - **Runtime Duration**: Specify how long the script should run before stopping.
+  - **Skip Interval**: Set the time interval to skip movements if the cursor has been moved recently.
+  - **Ctrl Key Press**: Optionally press the Ctrl key during automated movements.
+
+## Installation
+
+Ensure you have Python installed, and then install the required packages using `pip`:
+
+```bash
+pip install pyautogui pynput
+```
+
+## Usage
+
+1. **Run the Script**:
+
+   Execute the script using Python:
+
+   ```bash
+   python mouse_movement_script.py
+   ```
+
+2. **Configure the Script**:
+
+   Follow the on-screen prompts to configure the script settings:
+
+   - **Mode**: Choose between `random` or `one_pixel`.
+   - **Interval**: Enter the interval in seconds between cursor movements (default is 30).
+   - **Duration**: Enter the duration in seconds for cursor movement (default is 1, applicable to random mode).
+   - **Runtime**: Enter the total runtime in minutes (default is 30).
+   - **Skip Interval**: Enter the time interval in seconds for skipping movements (default is 120).
+   - **Ctrl Key Press**: Enable or disable Ctrl key press during movements (default is enabled).
+
+3. **Stop the Script**:
+
+   To stop the script, you can manually interrupt it by pressing `Ctrl+C` in the terminal.
+
+## Example
+
+```bash
+python mouse_movement_script.py
+```
+
+_Enter the mode (random/r, one_pixel/o, default is one_pixel):_ `random`
+
+_Enter the interval in seconds between cursor movements (default is 30):_ `60`
+
+_Enter the duration in seconds for cursor movement (default is 1):_ `2`
+
+_Enter the total runtime in minutes (default is 30):_ `10`
+
+_Enter the time interval in seconds for skipping movements (default is 120):_ `60`
+
+_Enable Ctrl key press during movements? (yes/y or no/n, default is yes):_ `no`
+
+The script will start running in random mode, moving the cursor to random locations every 60 seconds, for a total runtime of 10 minutes. It will skip movements if the cursor has been moved within the last 60 seconds and will not press the Ctrl key during movements.
+
+## License
+
+This script is provided under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-### Automating Cursor Movement to Prevent System Idle
+# 鼠标移动自动化和跟踪脚本
 
-Have you ever faced the frustration of your computer going idle during important tasks? Whether you're running long processes, downloading large files, or simply want to keep your system awake, our Python script provides a reliable solution to prevent your computer from going idle. This script automates cursor movement with various configurable options to suit your needs.
+## 介绍
 
-### Features
+此脚本旨在自动化鼠标移动并跟踪用户的鼠标活动。它提供两种光标移动模式：随机移动和单像素移动。此外，它会记录最后一次鼠标移动的时间，以避免在鼠标最近被移动的情况下触发冗余的自动化移动，并提供是否在自动化移动过程中按下 Ctrl 键的选项。
 
-**1. Two Modes of Cursor Movement:**
+## 特性
 
-- **Random Movement (random or r):** Moves the cursor to random coordinates on the screen smoothly over a specified duration.
-- **One Pixel Movement (one_pixel or o):** Moves the cursor one pixel in a random direction (left, right, up, or down).
+- **光标移动模式**：
 
-**2. Configurable Intervals:**
+  - **随机移动**：将光标平滑地移动到屏幕上的随机位置，移动过程持续指定的时间。
+  - **单像素移动**：将光标在随机方向（左、右、上或下）上移动一个像素。
 
-- Set the interval in seconds between each cursor movement.
+- **鼠标移动跟踪**：
 
-**3. Duration Setting:**
+  - 跟踪并记录最后一次鼠标移动的时间，以避免在鼠标最近被移动的情况下触发自动化移动。
 
-- For random movement mode, set the duration in seconds for each movement.
+- **日志记录**：
 
-**4. Total Runtime:**
+  - 提供光标移动和操作的详细日志，包括时间戳和坐标。
 
-- Specify the total runtime in minutes for which the script will run.
+- **可定制参数**：
+  - **移动模式**：选择 `random`（随机）或 `one_pixel`（单像素）模式。
+  - **移动间隔**：设置自动化移动之间的时间间隔（默认为 30 秒）。
+  - **移动持续时间**：定义光标平滑移动的持续时间（仅适用于随机模式）。
+  - **运行时间**：指定脚本应运行的总时间（以分钟为单位）。
+  - **跳过间隔**：设置在鼠标最近被移动的情况下跳过移动的时间间隔。
+  - **Ctrl 键按下**：在自动化移动过程中选择是否按下 Ctrl 键。
 
-**5. Skip Movement Feature:**
+## 安装
 
-- If the cursor has been moved within the last specified number of seconds, the script will skip the movement. This interval is configurable.
+确保安装了 Python，然后使用 `pip` 安装所需的包：
 
-**6. Keyboard Press Toggle:**
+```bash
+pip install pyautogui pynput
+```
 
-- Option to enable or disable pressing the 'Ctrl' key during cursor movements.
+## 使用
 
-### Usage Instructions
+1. **运行脚本**：
 
-1. **Download and Install Requirements:**
+   使用 Python 执行脚本：
 
-   Ensure you have Python installed on your system. Install the required module using:
-
-   ```sh
-   pip install pyautogui
+   ```bash
+   python mouse_movement_script.py
    ```
 
-2. **Run the Script:**
+2. **配置脚本**：
 
-   Save the script provided below into a file, for example, `cursor_mover.py`, and run it using:
+   按屏幕上的提示配置脚本设置：
 
-   ```sh
-   python cursor_mover.py
-   ```
+   - **模式**：选择 `random`（随机）或 `one_pixel`（单像素）。
+   - **间隔**：输入光标移动之间的时间间隔（默认为 30 秒）。
+   - **持续时间**：输入光标移动的持续时间（默认为 1 秒，仅适用于随机模式）。
+   - **运行时间**：输入脚本的总运行时间（默认为 30 分钟）。
+   - **跳过间隔**：输入在鼠标最近被移动的情况下跳过移动的时间间隔（默认为 120 秒）。
+   - **Ctrl 键按下**：选择是否在移动过程中按下 Ctrl 键（默认为启用）。
 
-3. **Input Configuration:**
+3. **停止脚本**：
 
-   - **Mode:** Choose between random (r) or one_pixel (o).
-   - **Interval:** Set the interval in seconds between cursor movements (default is 30).
-   - **Duration:** Set the duration in seconds for each movement in random mode (default is 1).
-   - **Total Runtime:** Specify the total runtime in minutes (default is 30).
-   - **Skip Interval:** Enter the time interval in seconds for skipping movements (default is 120).
-   - **Keyboard Press:** Enable or disable 'Ctrl' key press during movements (default is yes).
+   要停止脚本，可以通过在终端中按 `Ctrl+C` 手动中断它。
 
----
+## 示例
 
-## Chinese Version
+```bash
+python mouse_movement_script.py
+```
 
----
+_输入模式（random/r, one_pixel/o，默认为 one_pixel）：_ `random`
 
-### 自动化光标移动以防止系统闲置
+_输入光标移动之间的时间间隔（默认为 30 秒）：_ `60`
 
-你是否曾经因为在执行重要任务时，计算机进入闲置状态而感到沮丧？无论你是在运行长时间进程、下载大文件，还是只是想保持系统唤醒，我们的Python脚本都能为你提供可靠的解决方案，防止你的计算机进入闲置状态。这个脚本通过多种可配置选项自动化光标移动，以满足你的需求。
+_输入光标移动的持续时间（默认为 1 秒）：_ `2`
 
-### 功能
+_输入脚本的总运行时间（默认为 30 分钟）：_ `10`
 
-**1. 两种光标移动模式：**
+_输入在鼠标最近被移动的情况下跳过移动的时间间隔（默认为 120 秒）：_ `60`
 
-- **随机移动（random 或 r）：** 将光标平滑地移动到屏幕上的随机坐标，持续指定的时间。
-- **单像素移动（one_pixel 或 o）：** 将光标随机向一个方向（左、右、上或下）移动一个像素。
+_是否在移动过程中按下 Ctrl 键？（yes/y 或 no/n，默认为 yes）：_ `no`
 
-**2. 可配置间隔：**
+脚本将以随机模式开始运行，每 60 秒将光标移动到随机位置，总运行时间为 10 分钟。如果鼠标在过去 60 秒内已被移动，则将跳过移动，并且在移动过程中不会按下 Ctrl 键。
 
-- 设置每次光标移动之间的秒数间隔。
+## 许可证
 
-**3. 持续时间设置：**
-
-- 对于随机移动模式，设置每次移动的秒数。
-
-**4. 总运行时间：**
-
-- 指定脚本运行的总时间（分钟）。
-
-**5. 跳过移动功能：**
-
-- 如果在指定的秒数内光标已被移动，则跳过这次移动。此间隔可配置。
-
-**6. 键盘按键切换：**
-
-- 选择在
-
-光标移动期间是否按下“Ctrl”键。
-
-### 使用说明
-
-1. **下载并安装依赖：**
-
-   确保你的系统上已安装Python。使用以下命令安装所需模块：
-
-   ```sh
-   pip install pyautogui
-   ```
-
-2. **运行脚本：**
-
-   将以下脚本保存到文件（如 `cursor_mover.py`），然后使用以下命令运行：
-
-   ```sh
-   python cursor_mover.py
-   ```
-
-3. **输入配置：**
-
-   - **模式:** 选择 random（r）或 one_pixel（o）。
-   - **间隔:** 设置每次光标移动之间的秒数间隔（默认30）。
-   - **持续时间:** 在随机移动模式下设置每次移动的秒数（默认1）。
-   - **总运行时间:** 指定总运行时间（分钟，默认30）。
-   - **跳过间隔:** 输入跳过移动的时间间隔（秒，默认120）。
-   - **键盘按键:** 选择是否在移动期间按下“Ctrl”键（默认是）。
+此脚本根据 MIT 许可证提供。有关详细信息，请参阅 [LICENSE](LICENSE) 文件。
 
 ---
 
@@ -149,14 +193,22 @@ import random
 import time
 
 import pyautogui
+from pynput import mouse
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 
+# Global variable to store the last mouse move time
+last_move_time = None
+
 # Define the interval for skipping movement, default to 120 seconds
 SKIP_INTERVAL = 120
 
-last_move_time = None
+
+def on_move(x, y):
+    global last_move_time
+    last_move_time = time.time()
+    #  logging.info(f"Mouse moved to ({x}, {y}) at {time.ctime(last_move_time)}")
 
 
 def move_cursor_randomly(duration, press_ctrl):
@@ -252,6 +304,14 @@ def main(mode, interval, duration, runtime_minutes, press_ctrl):
 
 
 if __name__ == "__main__":
+    # Setup the mouse listener
+    mouse_listener = mouse.Listener(on_move=on_move)
+
+    # Start the listener
+    mouse_listener.start()
+
+    print("Listening for mouse movements.")
+
     # User-defined mode with shorthand options
     mode_input = (
         input("Enter the mode (random/r, one_pixel/o, default is one_pixel): ")
@@ -313,4 +373,7 @@ if __name__ == "__main__":
         f'Starting cursor movement in {mode} mode with {interval} seconds interval, {duration} seconds duration for each movement (if applicable), a total runtime of {runtime_minutes} minutes, skipping movements if cursor was moved in the last {SKIP_INTERVAL} seconds, and {"enabling" if press_ctrl else "disabling"} Ctrl key press during movements'
     )
     main(mode, interval, duration, runtime_minutes, press_ctrl)
+
+    # Ensure the listener is properly stopped
+    mouse_listener.stop()
 ```
