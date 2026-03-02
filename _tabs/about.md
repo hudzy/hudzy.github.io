@@ -1,9 +1,7 @@
 ---
-# layout: page
-permalink: /about/
-title: About
+# the default layout is 'page'
 icon: fas fa-info-circle
-order: 3
+order: 4
 ---
 
 # Albert Einstein
